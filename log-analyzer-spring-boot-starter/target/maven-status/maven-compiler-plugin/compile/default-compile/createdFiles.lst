@@ -1,0 +1,10 @@
+com/example/loganalyzer/ollama/OllamaClient$1.class
+com/example/loganalyzer/logging/OllamaAnalysisAppender.class
+com/example/loganalyzer/context/CodeContextResolver.class
+com/example/loganalyzer/core/ErrorEvent.class
+com/example/loganalyzer/config/LogAnalyzerProperties.class
+com/example/loganalyzer/autoconfigure/LogAnalyzerAutoConfiguration.class
+com/example/loganalyzer/core/ErrorAnalyzerService.class
+com/example/loganalyzer/core/TerminalReporter.class
+com/example/loganalyzer/core/PromptBuilder.class
+com/example/loganalyzer/ollama/OllamaClient.class

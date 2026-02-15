@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+log:
+  analyzer:
+    enabled: true
+    model: qwen2.5-coder:7b
+    ollama-url: http://localhost:11434
+    max-log-lines: 200
+    max-source-lines: 120
+    timeout-ms: 30000
+    source-root: src/main/java
