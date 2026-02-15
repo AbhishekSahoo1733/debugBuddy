@@ -47,6 +47,9 @@ log:
     enabled: true
     model: qwen2.5-coder:7b
     ollama-url: http://localhost:11434
+    timeout-ms: 120000
+    max-log-lines: 80
+    max-source-lines: 60
 ```
 
 ## Configuration
