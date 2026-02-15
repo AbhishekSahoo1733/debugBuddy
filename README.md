@@ -33,9 +33,9 @@ Add dependency:
 
 ```xml
 <dependency>
-  <groupId>com.example</groupId>
+  <groupId>io.github.abhisheksahoo1733</groupId>
   <artifactId>log-analyzer-spring-boot-starter</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
@@ -64,3 +64,4 @@ log:
 - No deduplication/rate limiting yet.
 - No secrets redaction yet.
 - Source resolution expects source tree available locally.
+

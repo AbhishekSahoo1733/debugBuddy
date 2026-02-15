@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.example</groupId>
+        <groupId>io.github.yourgithubusername</groupId>
         <artifactId>log-analyzer-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>example-app</artifactId>
@@ -17,11 +17,15 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>io.github.yourgithubusername</groupId>
             <artifactId>log-analyzer-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
+
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
 
     <build>
         <plugins>
