@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.yourgithubusername</groupId>
+        <groupId>io.github.abhisheksahoo1733</groupId>
         <artifactId>log-analyzer-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>example-app</artifactId>
@@ -17,7 +17,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.yourgithubusername</groupId>
+            <groupId>io.github.abhisheksahoo1733</groupId>
             <artifactId>log-analyzer-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>

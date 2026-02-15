@@ -22,7 +22,7 @@
         <developer>
             <id>AbhishekSahoo1733</id>
             <name>Abhishek Sahoo</name>
-            <email>asahoo1211@gmail.com</email>
+            <email>abhisheksahoo1211@gmail.com</email>
         </developer>
     </developers>
 
@@ -53,8 +53,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub ${github.owner} Apache Maven Packages</name>
-            <url>${github.packages.url}</url>
+            <name>GitHub AbhishekSahoo1733 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/AbhishekSahoo1733/debugBuddy</url>
         </repository>
     </distributionManagement>
 
@@ -104,6 +104,7 @@
             </plugins>
         </pluginManagement>
     </build>
+
 
     <profiles>
         <profile>
