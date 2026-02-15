@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.abhisheksahoo1733</groupId>
     <artifactId>log-analyzer-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Log Analyzer Parent</name>
     <description>Local Ollama-backed Java/Spring runtime log error analyzer</description>
@@ -22,7 +22,7 @@
         <developer>
             <id>AbhishekSahoo1733</id>
             <name>Abhishek Sahoo</name>
-            <email>abhisheksahoo1211@gmail</email>
+            <email>asahoo1211@gmail.com</email>
         </developer>
     </developers>
 
@@ -45,8 +45,18 @@
         <maven.source.plugin.version>3.3.1</maven.source.plugin.version>
         <maven.javadoc.plugin.version>3.10.0</maven.javadoc.plugin.version>
         <maven.gpg.plugin.version>3.2.7</maven.gpg.plugin.version>
-        <central.publishing.plugin.version>0.9.0</central.publishing.plugin.version>
+        <github.owner>AbhishekSahoo1733</github.owner>
+        <github.repo>debugBuddy</github.repo>
+        <github.packages.url>https://maven.pkg.github.com/${github.owner}/${github.repo}</github.packages.url>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub ${github.owner} Apache Maven Packages</name>
+            <url>${github.packages.url}</url>
+        </repository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
@@ -91,24 +101,8 @@
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>${maven.gpg.plugin.version}</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.sonatype.central</groupId>
-                    <artifactId>central-publishing-maven-plugin</artifactId>
-                    <version>${central.publishing.plugin.version}</version>
-                </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <publishingServerId>central</publishingServerId>
-                    <autoPublish>true</autoPublish>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
 
     <profiles>
